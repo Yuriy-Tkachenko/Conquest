@@ -1,7 +1,7 @@
 ## Website for construction company "DB"
 
 ### Description:
-This site was created for a construction company as part of training my skills in developing adaptive websites.
+This site was created for a watch store as part of training my skills in developing websites.
 
 ### Technologies Used
 ![html](https://img.shields.io/badge/HTML-000000?style=for-the-badge&logo=html5)
