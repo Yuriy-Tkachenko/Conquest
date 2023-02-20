@@ -1,0 +1,51 @@
+.page-header .container {
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 17px;
+}
+
+.logo {
+  font-size: 12px;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-left: 23px;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(../../img/logo-decore.svg);
+    left: -22px;
+    top: -1.5px;
+  }
+}
+
+.page-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-nav__item {
+  &:not(:last-child) {
+    margin-right: 65px;
+  }
+}
+
+.user-nav__list {
+  display: flex;
+}
+
+.user-nav__item {
+  &:not(:last-child) {
+    margin-right: 23px;
+  }
+}
+
+.button {
+  @include button
+}
