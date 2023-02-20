@@ -1,0 +1,68 @@
+.catalog .container {
+  height: 720px;
+}
+
+.catalog .container .subtitle {
+  text-align: center;
+  margin: 79px 0 52px 0;
+}
+
+.catalog-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-item {
+  width: 313px;
+  height: 392px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-name {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.product-picture {
+  padding-top: 39px;
+}
+
+.product-picture img {
+  background-image: url(../../img/decore-ellipse.svg);
+  background-repeat: no-repeat;
+}
+
+.product-link {
+  font-family: 'Playfair Display';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: $firm-black;
+  position: relative;
+  margin-left: 48px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    background-color: $firm-extra-light-grey;
+    top: 12px;
+    left: -43px;
+  }
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-price {
+  font-family: "Prata";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
