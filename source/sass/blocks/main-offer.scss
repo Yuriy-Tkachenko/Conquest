@@ -1,0 +1,90 @@
+.main-offer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 758px;
+}
+
+.offer-title {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 60px;
+  margin: 0 0 16px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.subtitle {
+  @include subtitle;
+  margin: 0 0 39px 0;
+}
+
+.offer-text {
+  font-weight: 300;
+  line-height: 21px;
+  margin: 0 0 64px 0;
+}
+.catalog-link {
+  color: $firm-white;
+  background-color: $firm-light-grey;
+  padding: 26px 38px;
+}
+
+.offer-product-wrapper {
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 496px;
+    height: 764px;
+    background-image: url(../../img/main-decore@1x.png);
+    top: 5px;
+    left: -250px;
+  }
+}
+
+.offer-picture {
+  margin-right: 84px;
+  position: relative;
+}
+
+.product-info {
+  font-family: 'Prata';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  position: absolute;
+}
+
+.product-info--left-position {
+  top: 145px;
+  left: -140px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: $firm-extra-light-grey;
+    top: 9px;
+    left: 75px;
+  }
+}
+
+.product-info--right-position {
+  bottom: 147px;
+  right: 0;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: $firm-extra-light-grey;
+    top: 10px;
+    left: -67px;
+  }
+}
