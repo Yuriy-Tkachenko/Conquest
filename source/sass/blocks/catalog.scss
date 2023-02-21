@@ -4,8 +4,30 @@
 
 .catalog .container .subtitle {
   text-align: center;
-  margin: 0 0 97px 0;
+  margin: 0;
   padding-top: 75px;
+}
+
+.catalog__button {
+  @include button;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: $firm-light-grey;
+  display: block;
+  padding: 0;
+  margin: 0 0 76px auto;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 103px;
+    height: 1px;
+    background-color: $firm-light-grey;
+    bottom: -4px;
+  }
 }
 
 .catalog-list {
@@ -28,10 +50,10 @@
 }
 
 .product-picture {
-  padding-top: 39px;
+  margin-top: 39px;
 }
 
-.product-picture img {
+.product-picture {
   background-image: url(../../img/decore-ellipse.svg);
   background-repeat: no-repeat;
 }
