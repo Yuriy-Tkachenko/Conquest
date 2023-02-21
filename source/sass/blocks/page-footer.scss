@@ -1,0 +1,75 @@
+.page-footer {
+  background-color: $firm-light-grey;
+  color: $firm-white;
+}
+
+.page-footer a {
+  color: $firm-white;
+}
+
+.page-footer .container {
+  height: 275px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 79px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts .logo {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.14em;
+  margin-bottom: 23px;
+}
+
+.contacts a {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.link-number {
+  margin-bottom: 15px;
+}
+
+.contacts .logo {
+  margin-left: 28px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-image: url(../../img/footer-logo-decore.svg);
+    left: -29px;
+    top: -3px;
+  }
+}
+
+.footer-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.07em;
+  margin: 0 0 29px 0;
+}
+
+.link-item {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.link {
+  color: $firm-white;
+}
