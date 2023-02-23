@@ -1,8 +1,22 @@
 .main-offer .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  height: 804px;
+  flex-wrap: wrap;
+
+  @media(min-width: $tablet-width) {
+    justify-content: space-between;
+  }
+}
+
+.offer-info-wrapper {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 80px;
+
+  @media(min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .offer-title {
@@ -11,8 +25,6 @@
   font-size: 45px;
   line-height: 60px;
   margin: 0 0 16px 0;
-  position: relative;
-  z-index: 1;
 }
 
 .subtitle {
@@ -25,6 +37,7 @@
   line-height: 21px;
   margin: 0 0 64px 0;
 }
+
 .catalog-link {
   color: $firm-white;
   background-color: $firm-light-grey;
@@ -34,23 +47,38 @@
 .offer-product-wrapper {
   position: relative;
 
-  &:before {
-    content: "";
-    position: absolute;
-    width: 496px;
-    height: 764px;
-    background-image: url(../../img/main-decore@1x.png);
-    top: 5px;
-    left: -250px;
+  @media(min-width: $desktop-width) {
+    &:before {
+      content: "";
+      position: absolute;
+      width: 496px;
+      height: 764px;
+      background-image: url(../../img/main-decore@1x.png);
+      top: 5px;
+      left: -250px;
+    }
   }
 }
 
 .offer-picture {
-  margin-right: 84px;
-  position: relative;
+  width: 215px;
+  height: 344px;
+
+  @media(min-width: $tablet-width) {
+    width: 345px;
+    height: 554px;
+  }
+
+  @media(min-width: $desktop-width) {
+    width: 500px;
+    height: 800px;
+    margin-right: 84px;
+    position: relative;
+  }
 }
 
 .product-info {
+  display: inline;
   font-family: 'Prata';
   font-style: normal;
   font-weight: 400;
@@ -60,8 +88,8 @@
 }
 
 .product-info--left-position {
-  top: 145px;
-  left: -140px;
+  top: 30px;
+  left: -80px;
 
   &:after {
     content: "";
@@ -72,11 +100,21 @@
     top: 9px;
     left: 75px;
   }
+
+  @media(min-width: $tablet-width) {
+    top: 45px;
+    left: -80px;
+  }
+
+  @media(min-width: $desktop-width) {
+    top: 145px;
+    left: -140px;
+  }
 }
 
 .product-info--right-position {
-  bottom: 147px;
-  right: 0;
+  bottom: -5px;
+  right: -130px;
 
   &:before {
     content: "";
@@ -86,5 +124,15 @@
     background-color: $firm-extra-light-grey;
     top: 10px;
     left: -67px;
+  }
+
+  @media(min-width: $tablet-width) {
+    bottom: 52px;
+    right: 240px;
+  }
+
+  @media(min-width: $desktop-width) {
+    bottom: 147px;
+    right: 0;
   }
 }

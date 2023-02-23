@@ -8,10 +8,19 @@
 }
 
 .page-footer .container {
-  height: 275px;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 79px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 79px;
+    padding-bottom: 67px;
+}
+
+.page-footer .container div {
+  margin-bottom: 20px;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
 }
 
 .contacts {

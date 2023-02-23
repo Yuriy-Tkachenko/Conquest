@@ -1,11 +1,14 @@
 .subscribe-info .container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 81px auto 90px auto;
 }
 
 .info-wrapper .subtitle {
-  margin-top: 140px;
+  @media(min-width: $desktop-width) {
+    margin-top: 140px;       
+  }
 }
 
 .info-description {
@@ -14,12 +17,21 @@
   font-size: 16px;
   line-height: 27px;
   max-width: 376px;
-  margin: 0 0 118px 0;
+  margin: 0 0 40px 0;
+
+  @media(min-width: $desktop-width) {
+    margin-bottom: 118px;
+  }
 }
 
 .social-list {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
+
+  @media(min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .social-item {
@@ -29,10 +41,14 @@
 }
 
 .gallery-wrapper {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  gap: 10px;
+  display: none;
+
+  @media(min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 10px;  
+  }
 }
 
 .photo-1 {

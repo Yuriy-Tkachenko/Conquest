@@ -4,22 +4,32 @@
   background-repeat: no-repeat;
   position: relative;
 
-  &:before {
-    content: "";
-    position: absolute;
-    height: 519px;
-    width: 280px;
-    background-image: url(../../img/page-decore.svg);
-    right: 0;
-    top: 0;
+  @media(min-width: $tablet-width) {
+    &:before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 280px;
+      background-image: url(../../img/page-decore.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      right: 0;
+      top: 0;
+    }
   }
 }
+
 .about .container {
-  height: 519px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
+
+  @media(min-width: $desktop-width) {
+    justify-content: center;
+  }
 }
+
 .slider-wrapper {
   margin-right: 70px;
   display: flex;
