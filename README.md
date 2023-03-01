@@ -1,7 +1,7 @@
-## Website for construction company "DB"
+## Landing-page для интернет-магазина по продаже часов Conquest
 
-### Description:
-This site was created for a watch store as part of training my skills in developing websites.
+### Описание:
+Этот сайт был создан для закрепления навыков верстки лендингов в рамках обучения.
 
 ### Technologies Used
 ![html](https://img.shields.io/badge/HTML-000000?style=for-the-badge&logo=html5)
@@ -10,16 +10,10 @@ This site was created for a watch store as part of training my skills in develop
 ![gulp](https://img.shields.io/badge/Gulp-000000?style=for-the-badge&logo=gulp)
 
 ### Setup
-To run this project, install it locally using npm:
+Для запуска проекта, выполните локальную установку, используя npm:
 
 ```
 $ cd ../DB
 $ npm install
 $ npm start
 ```
-
-### Contact
-If you like what I do, subcsribe me  
-
-[![linkedin](https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/tkachenkoyu/)
-[![twitter](https://img.shields.io/badge/Twitter-000000?style=for-the-badge&logo=twitter)](https://twitter.com/slogan_here)
